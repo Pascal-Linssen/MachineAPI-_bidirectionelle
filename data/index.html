@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<!------------------------------------------------------ Header ----------------------------------------------------------->
+
+
+<head>
+    <title>Machine N°3 (17 KG)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="w3.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<div class="w3-card w3-serif w3-light-blue w3-padding-small w3-center">
+    <h1>Machine N°3 (17 KG)</h1>
+</div>
+
+<!------------------------------------------------------Affichage etat machine On/Off----------------------------------------------------------->
+
+
+<div class="w3-margin w3-center w3-card w3-padding-20">
+
+    
+        <h3 class="w3-padding"><span id="ValeurEtat">Initialisation</span></h3>
+     
+</div>
+
+
+
+<!------------------------------------------------------Bouton Essorge----------------------------------------------------------->
+
+<div class="w3-margin w3-center w3-card w3-padding-24">
+    
+    <button onclick="myFunction()" class="w3-button w3-green w3-large w3-wide" style="width:80%;">Essorage</button>
+
+
+
+    <script>
+        function myFunction() {
+          
+            if (confirm("Confirmer la commande d'essorage ou annuler")) Buttonessorage()
+            
+        }
+    </script>
+
+
+
+</div>
+
+<!------------------------------------------------------Bouton Jetons ----------------------------------------------------------->
+
+<div class="w3-margin w3-center w3-card w3-padding-24">
+    
+    <button onclick="myFunction1()" class="w3-button w3-light-blue w3-large w3-wide" style="width:80%;">Demarrer (5 Jetons) </button>
+
+
+
+    <script>
+        function myFunction1() {
+          
+            if (confirm("Confirmer l'ajout de 5 jetons ou annuler")) Buttonjeton()
+          
+            }
+           
+    </script>
+
+
+   
+</div>
+
+<!------------------------------------------------------Bouton Reset ----------------------------------------------------------->
+
+<div class="w3-margin w3-center w3-card w3-padding-24">
+   
+
+    <button onclick="myFunction2()" class="w3-button w3-orange w3-large w3-wide" style="width:80%;">Relancer</button>
+
+
+
+    <script>
+        function myFunction2() {
+          
+            if (confirm("Confirmer le reset de la machine  ou annuler")) Buttonreset()
+          
+            }
+           
+    </script>
+
+    
+</div>
+
+<!------------------------------------------------------Bouton Stop----------------------------------------------------------->
+
+<div class="w3-margin w3-center w3-card w3-padding-24">
+    
+    <button onclick="myFunction3()" class="w3-button w3-red w3-large w3-wide" style="width:80%;">Stop (Hors-service)</button>
+
+
+
+    <script>
+        function myFunction3() {
+           
+            if (confirm("Confirmer la mise hors service de la machine  ou annuler")) Buttonstop()
+           
+            }
+           
+    </script>
+    
+</div>
+
+<!------------------------------------------------------ Nombre de jeton(s) inserer ----------------------------------------------------------->
+
+<div class="w3-margin w3-center w3-card w3-padding-20">
+    <h3 class="w3-padding">Nombre de jeton(s) insérer</h3>
+    <p class="w3-xlarge"><span id="valeurJeton">0</span></p>
+</div>
+
+<!------------------------------------------------------ Température de l'eau ----------------------------------------------------------->
+
+
+<div class="w3-margin w3-center w3-card w3-padding-20">
+    <h3 class="w3-padding">Température de l'eau</h3>
+    <p class="w3-xlarge"><span id="Temperature1">0</span> C°</p>
+
+</div>
+
+<!------------------------------------------------------ Fin ----------------------------------------------------------->
+
+
+<div class="w3-padding w3-center">
+    <i><a>AutoWash-Remotte V 4.6</a></i>
+</div>
+
+</body>
+
+</html>
